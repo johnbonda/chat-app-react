@@ -35,7 +35,7 @@ function App() {
     }
     messageInput.current?.focus()
 
-    const ws = new WebSocket("ws://localhost:8080/name")
+    const ws = new WebSocket("ws://192.168.0.100:8080/name")
     ws.onopen = () => {
       console.log("Connected to server")
       console.log("Ready state is: ", ws.readyState)
@@ -58,6 +58,7 @@ function App() {
     }
     ws.onerror = (err) => {
       console.log("we have an error in websocket: ", err)
+      alert("Server error")
     }
     ws.onclose = (event) => {
       console.log("Connection is closed: ", event.reason)

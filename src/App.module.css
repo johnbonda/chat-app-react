@@ -17,14 +17,16 @@
 .ChatInput {
   display: flex;
   margin: 10px;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .MessageInput {
-  width: 80vw;
-  font-size: 5vh;
+  width: 70vw;
+  font-size: 20px;
+  padding: 0px;
+  height: 40px;
   border: 1px solid grey;
-  margin: 0 1px;
+  margin: 5px;
 }
 
 .MessageInput:focus {
@@ -35,7 +37,8 @@
 .SendMessage {
   /* height: calc(5vh + 4px); */
   /* height: 5vh; */
-  font-size: 5vh;
+  font-size: 20px;
+  height: 40px;
   width: 15vw;
 }
 

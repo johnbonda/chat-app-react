@@ -18,7 +18,7 @@ const MessageView = ({from, text, currentUser}: Props) => {
             style={{textAlign: (from === currentUser ? "right" : "left")}}
             // style={{textAlign: 'right'}}
         >
-            <sub style={{fontSize: "1vh"}}>{from}</sub>
+            <sub style={{fontSize: "10px"}}>{from}</sub>
             <br />
             {text}
         </div>
